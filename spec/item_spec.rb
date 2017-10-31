@@ -15,4 +15,11 @@ describe Item do
     expect(item.quality).to eq 25
   end
 
+  describe '#to_s' do
+
+    it 'returns all of an items attributes in a string' do
+      expect(item.to_s).to eq("golden turnip, 10, 25")
+    end
+  end
+
 end
